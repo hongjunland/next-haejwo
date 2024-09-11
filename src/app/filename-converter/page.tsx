@@ -54,7 +54,7 @@ function FileNameConverterPage() {
   
     return (
       <div>
-        <h1>Mac ↔ Windows 한글 파일명 변환기</h1>
+        <h1>Mac ↔ Windows 한글 파일명 인코딩 변환기</h1>
         <label htmlFor="convertDirection">변환 방향 선택:</label>
         <select
           id="convertDirection"
@@ -82,7 +82,6 @@ function FileNameConverterPage() {
         </div>
         {originalFileName && (
           <div>
-            <p>원본 파일명: {originalFileName}</p>
             <p>변환된 파일명: {convertedFileName}</p>
             {fileContent && (
               <button onClick={downloadFile} style={{ marginTop: '10px' }}>

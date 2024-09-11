@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const links = [
   {
-    title: "Windows <=> MacOS 파일이름 변환기",
+    title: "Mac ↔ Windows 한글 파일명 인코딩 변환기",
     description: '운영체제의 차이로 인해 파일 이름이 깨지는 것을 전환해주는 페이지입니다.',
     href: "/filename-converter",
   },
