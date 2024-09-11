@@ -8,7 +8,7 @@ const links = [
     href: "/filename-converter",
   },
   {
-    title: "시간 계산기",
+    title: "시간 계산기(Coming Soon!)",
     description: "선택근무제 시간을 대신 계산해주는 페이지입니다.",
     href: "/time-calculator",
   },
