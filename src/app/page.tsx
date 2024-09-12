@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const links = [
   {
-    title: "Mac ↔ Windows 한글 파일명 인코딩 변환기",
-    description: '운영체제의 차이로 인해 파일 이름이 깨지는 것을 전환해주는 페이지입니다.',
+    title: "ㅎ ㅏㄴᄀㅡㄹ -> 한글",
+    description: 'MacOS에서 Windows에 전송된 문서의 파일명을 보정해주는 페이지입니다.',
     href: "/filename-converter",
   },
   {
@@ -20,16 +20,14 @@ export default function Home() {
         <div className={styles.grid}>
           {links.map((link, index) => (
             <div key={index} className={styles.card}>
-              <h2 className={styles.cardTitle}>{link.title}</h2>
-              <p className={styles.cardDescription}>{link.description}</p>
-              <Link href={link.href} className={styles.linkButton}>
-                링크로 이동
+              <Link href={link.href}>
+                <h2 className={styles.cardTitle}>{link.title}</h2>
+                <p className={styles.cardDescription}>{link.description}</p>
               </Link>
             </div>
           ))}
         </div>
       </main>
-      <footer></footer>
     </div>
   );
 }

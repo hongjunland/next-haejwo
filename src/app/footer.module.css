@@ -1,0 +1,71 @@
+/* Footer 스타일 */
+.footer {
+    display: block;
+    width: 100%;
+    color: #dee2e6;
+    background-color: #2a3037;
+}
+
+.container {
+    max-width: 1200px;
+    /* 컨테이너 최대 너비 */
+    margin: 0 auto;
+    /* 중앙 정렬 */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* 작은 화면에서 행이 겹치도록 설정 */
+}
+
+/* 각 열 */
+.column {
+    flex: 1;
+    /* 공간을 동일하게 나눔 */
+    padding: 10px;
+    min-width: 250px;
+    /* 최소 너비 설정 */
+}
+
+/* 메뉴 링크 스타일 */
+.menuList {
+    list-style: none;
+    padding: 0;
+}
+
+.menuList li {
+    margin-bottom: 10px;
+}
+
+.menuList li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menuList li a:hover {
+    text-decoration: underline;
+}
+
+/* 소셜 미디어 아이콘 스타일 */
+.socialIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.socialIcons a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 반응형 디자인: 화면 크기가 768px 이하일 때 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .column {
+        padding: 20px 0;
+    }
+}
