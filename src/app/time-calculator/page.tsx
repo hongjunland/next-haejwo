@@ -15,7 +15,7 @@ function TimeCalculator() {
   };
 
   const formatTimeRange = (startTime: Date, endTime: Date) => {
-    const options = { hour: "numeric", minute: "numeric", hour12: true };
+    const options: Intl.DateTimeFormatOptions = { hour: "numeric", minute: "numeric", hour12: true };
     return `${startTime.toLocaleTimeString(
       [],
       options
@@ -23,13 +23,13 @@ function TimeCalculator() {
   };
 
   const calculateTime = () => {
-    let currentTime = new Date(`1970-01-01T${startTime}:00`); // 출근 시각 설정
+    const currentTime = new Date(`1970-01-01T${startTime}:00`); // 출근 시각 설정
 
     // 기본 퇴근 시각: 출근 시각 + 9시간 (근무 8시간 + 점심 1시간)
     const baseEndTime = new Date(currentTime.getTime());
     baseEndTime.setHours(currentTime.getHours() + WORK_HOURS + 1); // 9시간 후 기본 퇴근 시각
 
-    let result = {
+    const result = {
       baseEndTime: baseEndTime.toLocaleTimeString([], {
         hour: "2-digit",
         minute: "2-digit",
@@ -41,7 +41,7 @@ function TimeCalculator() {
       flexEndTime: baseEndTime,
     };
 
-    let currentEndTime = new Date(baseEndTime.getTime()); // 기본 퇴근 시각 복사
+    const currentEndTime = new Date(baseEndTime.getTime()); // 기본 퇴근 시각 복사
 
     // F-day 및 선택근무제 순서에 따라 적용
     if (applyOrder === "fday-first") {
@@ -97,9 +97,6 @@ function TimeCalculator() {
     baseEndTime,
     fDayRange,
     flexRange,
-    fDayStartTime,
-    flexStartTime,
-    flexEndTime,
   } = calculateTime();
 
   return (
