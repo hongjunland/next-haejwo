@@ -15,11 +15,12 @@ function TimeCalculator() {
   };
 
   const formatTimeRange = (startTime: Date, endTime: Date) => {
-    const options: Intl.DateTimeFormatOptions = { hour: "numeric", minute: "numeric", hour12: true };
-    return `${startTime.toLocaleTimeString(
-      [],
-      options
-    )} ~ ${endTime.toLocaleTimeString([], options)}`;
+    const options: Intl.DateTimeFormatOptions = { 
+      hour: '2-digit', 
+      minute: '2-digit', 
+      hour12: false  // 24시간 형식으로 설정
+    };
+    return `${startTime.toLocaleTimeString([], options)} ~ ${endTime.toLocaleTimeString([], options)}`;
   };
 
   const calculateTime = () => {
@@ -33,6 +34,7 @@ function TimeCalculator() {
       baseEndTime: baseEndTime.toLocaleTimeString([], {
         hour: "2-digit",
         minute: "2-digit",
+        hour12: false
       }),
       fDayRange: "",
       flexRange: "",
