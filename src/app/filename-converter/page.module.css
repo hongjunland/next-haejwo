@@ -1,11 +1,11 @@
 .fileContainer {
-    width: 90%; /* 부모 요소의 90% 너비 */
     aspect-ratio: auto 2 / 1;
     border: 2px dashed gray;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    color: rgba(0, 0, 0, 0.5);
     box-sizing: border-box; /* 패딩을 포함한 크기 계산 */
 }
 

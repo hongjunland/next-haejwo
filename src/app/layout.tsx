@@ -5,7 +5,7 @@ import Header from "./header";
 
 export const metadata: Metadata = {
   title: "해줘",
-  description: "귀찮은거 다 해주는 도구 모음",
+  description: "귀찮은것들을 '딸깍!' 해주는 도구 모음",
 };
 
 export default function RootLayout({

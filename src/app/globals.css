@@ -1,18 +1,6 @@
 @import url('https://static.toss.im/tps/main.css');
 @import url('https://static.toss.im/tps/others.css');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html,
 body {
   max-width: 100vw;
@@ -20,8 +8,6 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -46,8 +32,3 @@ a {
 }
 
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}

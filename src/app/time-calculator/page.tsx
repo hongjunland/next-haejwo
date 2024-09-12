@@ -123,7 +123,7 @@ function TimeCalculator() {
             onChange={() => setUseFDay(!useFDay)}
             className={styles.checkbox}
           />
-          F-day 사용 (1시간 30분 단축)
+          F-day 사용 (90분)
         </label>
       </div>
 
@@ -135,9 +135,9 @@ function TimeCalculator() {
           className={styles.select}
         >
           <option value={0}>사용 안함</option>
-          <option value={1}>1번 사용 (30분)</option>
-          <option value={2}>2번 사용 (60분)</option>
-          <option value={3}>3번 사용 (90분)</option>
+          <option value={1}>30분</option>
+          <option value={2}>60분</option>
+          <option value={3}>90분</option>
         </select>
       </div>
 
@@ -159,7 +159,7 @@ function TimeCalculator() {
       <div className={styles.flowChartContainer}>
         <div
           className={styles.flowItem}
-          style={{ backgroundColor: "rgba(1, 198, 195, 0.8)" }}
+          style={{ backgroundColor: "rgba(1, 198, 195, 0.6)" }}
         >
           출근: {startTime}
         </div>
@@ -172,7 +172,7 @@ function TimeCalculator() {
                 <div className={styles.arrow}>⬇</div>
                 <div
                   className={styles.flowItem}
-                  style={{ backgroundColor: "rgba(217, 217, 122, 0.8)" }}
+                  style={{ backgroundColor: "rgba(170, 122, 217, 0.6)" }}
                 >
                   {fDayRange}
                 </div>
@@ -183,7 +183,7 @@ function TimeCalculator() {
                 <div className={styles.arrow}>⬇</div>
                 <div
                   className={styles.flowItem}
-                  style={{ backgroundColor: "rgba(170, 122, 217, 0.8)" }}
+                  style={{ backgroundColor: "rgba(217, 217, 122, 0.6)" }}
                 >
                   {flexRange}
                 </div>
@@ -197,7 +197,7 @@ function TimeCalculator() {
                 <div className={styles.arrow}>⬇</div>
                 <div
                   className={styles.flowItem}
-                  style={{ backgroundColor: "rgba(170, 122, 217, 0.8)" }}
+                  style={{ backgroundColor: "rgba(217, 217, 122, 0.6)" }}
                 >
                   {flexRange}
                 </div>
@@ -208,7 +208,7 @@ function TimeCalculator() {
                 <div className={styles.arrow}>⬇</div>
                 <div
                   className={styles.flowItem}
-                  style={{ backgroundColor: "rgba(217, 217, 122, 0.8)" }}
+                  style={{ backgroundColor: "rgba(170, 122, 217, 0.6)" }}
                 >
                   {fDayRange}
                 </div>
@@ -220,7 +220,7 @@ function TimeCalculator() {
         <div className={styles.arrow}>⬇</div>
         <div
           className={styles.flowItem}
-          style={{ backgroundColor: "rgba(1, 198, 195, 0.8)" }}
+          style={{ backgroundColor: "rgba(1, 198, 195, 0.6)" }}
         >
           퇴근: {baseEndTime}
         </div>

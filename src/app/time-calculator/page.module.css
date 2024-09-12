@@ -13,6 +13,7 @@
 
 .formGroup {
     margin: 20px 0;
+    vertical-align: middle; /* 체크박스를 라벨 중앙에 맞춤 */
 }
 
 .label {
@@ -32,6 +33,7 @@
 .checkbox {
     zoom: 1.5;
     margin-right: 5px;
+    vertical-align: middle; /* 체크박스를 라벨 중앙에 맞춤 */
 }
 
 .flowChartContainer {
