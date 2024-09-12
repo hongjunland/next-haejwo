@@ -1,0 +1,34 @@
+.fileContainer {
+    width: 90%; /* 부모 요소의 90% 너비 */
+    aspect-ratio: auto 2 / 1;
+    border: 2px dashed gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    box-sizing: border-box; /* 패딩을 포함한 크기 계산 */
+}
+
+/* 작은 화면에 맞게 높이를 고정 */
+@media (max-width: 768px) {
+    .fileContainer {
+        width: 90%; /* 작은 화면에서는 더 넓게 */
+        min-height: 180px; /* 작은 화면에서 최소 높이를 증가 */
+    }
+}
+
+/* 아주 작은 화면 (모바일)에서의 반응형 처리 */
+@media (max-width: 480px) {
+    .fileContainer {
+        width: 100%; /* 모바일 화면에서는 100% 너비 */
+        min-height: 150px; /* 최소 높이를 다시 낮춤 */
+    }
+}
+
+.downloadButton{
+    width: 90%;
+    min-height: 48px; 
+    font-size: 14px;
+    height: auto; 
+    margin-top: 10px;
+}

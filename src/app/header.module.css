@@ -1,0 +1,37 @@
+/* 헤더 스타일 */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+/* 로고와 브랜드 이름을 담는 컨테이너 스타일 */
+.headerContainer {
+    max-width: 980px; /* 최대 너비 980px */
+    width: 100%; /* 전체 너비 사용 */
+    margin: 0 auto; /* 중앙 정렬 */
+    padding: 0 20px; /* 좌우 패딩 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 로고 스타일 */
+.brand {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 640px) {
+    .headerContainer {
+        max-width: 980px;
+    }
+}
