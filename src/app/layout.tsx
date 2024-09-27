@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 // import Footer from "./footer";
 import Header from "./header";
+import GoogleAnalytics from "@/lib/GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "해줘",
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
+        {<GoogleAnalytics gaId={"G-HFVBYYHTZB"} />}
         <Header/>
         <main>{children}</main>
         {/* <Footer /> */}
